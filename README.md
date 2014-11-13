@@ -1,4 +1,4 @@
-Wordpress Centered Pagination
+Wordpress Centered Flexible width Pagination
 ====================
 
 
