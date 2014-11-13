@@ -1,5 +1,5 @@
 /*********************
-PAGE NAVI
+WORDPRESS PAGE NAVI  
 *********************/
 
 add_filter('next_posts_link_attributes', 'posts_link_attributes_next');
