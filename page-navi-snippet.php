@@ -16,10 +16,11 @@ function posts_link_attributes_prev() {
 function new_page_navi() {
   global $wp_query;
   $bignum = 999999999;
+  $translated = __( 'Page', 'mytextdomain' ); // Supply translatable string
   if ( $wp_query->max_num_pages <= 1 )
     return;
-  echo previous_posts_link(__('< Previous Page'));
-  echo next_posts_link(__('Next Page >'));
+  echo previous_posts_link(__('< Previous Page', 'mytextdomain'));
+  echo next_posts_link(__('Next Page >','mytextdomain'));
   echo '<nav class="pagination">';
   echo paginate_links( array(
     'base'         => str_replace( $bignum, '%#%', esc_url( get_pagenum_link($bignum) ) ),
@@ -30,7 +31,7 @@ function new_page_navi() {
     'type'         => 'list',
     'end_size'     => 3,
     'mid_size'     => 3,
-    'before_page_number' => '<span class="screen-reader-text">'.$translated.' </span>'
+    'before_page_number' => '<span class="visuallyhidden">'.$translated.' </span>'
   ) );
   echo '</nav>';
 } /* end page navi */
