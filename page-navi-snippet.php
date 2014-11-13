@@ -18,8 +18,8 @@ function new_page_navi() {
   $bignum = 999999999;
   if ( $wp_query->max_num_pages <= 1 )
     return;
-  echo previous_posts_link();
-  echo next_posts_link();
+  echo previous_posts_link(__('< Previous Page'));
+  echo next_posts_link(__('Next Page >'));
   echo '<nav class="pagination">';
   echo paginate_links( array(
     'base'         => str_replace( $bignum, '%#%', esc_url( get_pagenum_link($bignum) ) ),
