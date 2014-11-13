@@ -1,0 +1,4 @@
+wordpress-pagination
+====================
+
+Centered pagination
