@@ -1,0 +1,44 @@
+/**** page navigation ****/
+
+.wrap_pagination {
+	position: relative; 
+	text-align: center; 
+	width: 100%;
+	border-top: 1px solid #333;
+	padding-top: 20px;
+	display: inline-block;
+}
+.pagination {
+	 display: inline-block;
+	 height: 30px;
+	 max-width: 90%;
+	 overflow: visible;
+	 padding: 0 5px;
+	 position: relative;
+	 top: -20px;
+	 .page-numbers {
+	    position: relative;
+		  li { 
+    		float: left;
+    		list-style: none outside none;
+    		margin: 5px 2px;
+    		width: 15px;
+    		}
+	 }
+}
+
+.prev, .next {
+  line-height: 30px;
+  position: absolute;
+  top: 0;
+}
+.prev {
+  left: 5px;
+}
+.next {
+ right: 5px; 
+}
+ .next:hover,
+ .prev:hover {
+  color: YellowGreen;
+}
