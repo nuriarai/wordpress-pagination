@@ -1,4 +1,4 @@
 wordpress-pagination
 ====================
 
-Centered pagination
+Responsive Centered pagination 
